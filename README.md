@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently working on **Attendance Tracking App** to help students manage their lectures and know how many they can skip.<br>👯 I’m looking to collaborate on **hackathons and open-source UI/UX design projects**.<br>🤝 I’m looking for help with **improving UI accessibility and learning React Native**.<br>🌱 I’m currently learning **Tailwind CSS, React.js, and design systems**.<br>💬 Ask me about **frontend development, Figma workflows, or how to start a blog**.<br>⚡ Fun fact: I started a **motivational blog** focused on self-growth in early 2025 and love writing in my free time.
+🔭 I’m currently working on Myself.<br>👯 I’m looking to collaborate on **hackathons and open-source UI/UX design projects**.<br>🤝 I’m looking for help with **improving UI accessibility and learning React Native**.<br>🌱 I’m currently learning **Tailwind CSS, React.js, and design systems**.<br>💬 Ask me about **frontend development, Figma workflows, or how to start a blog**.<br>⚡ Fun fact: I started a **motivational blog** focused on self-growth in early 2025 and love writing in my free time.
 
 
 ## 🌐 Socials:
