@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 320" width="100%" role="img">
+  <title>MOM AI — Autonomous Smart-Home Energy Agent</title>
+  <desc>Intelligent reinforcement learning agent for smart grid energy optimization and dynamic household load shedding.</desc>
+  <defs>
+    <filter id="momCardGlow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'SF Mono', Monaco, 'Courier New', monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .card-title { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 17px; font-weight: 800; fill: #ffffff; letter-spacing: 0.5px; }
+    .card-desc { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 11.5px; fill: #94a3b8; line-height: 1.5; }
+    .tag-box { fill: #161b22; stroke: #30363d; stroke-width: 1; rx: 4px; }
+    .tag-text { font-family: 'SF Mono', Monaco, monospace; font-size: 9.5px; fill: #34d399; }
+  </style>
+
+  <rect width="520" height="320" rx="14" fill="#091312" stroke="#064e3b" stroke-width="1.2" filter="url(#momCardGlow)"/>
+
+  <!-- Top Category Bar -->
+  <g transform="translate(26, 26)">
+    <rect width="148" height="20" rx="4" fill="#064e3b" stroke="#059669" stroke-width="1"/>
+    <text x="74" y="14" class="mono" font-size="9" font-weight="700" fill="#34d399" text-anchor="middle">AUTONOMOUS IOT / AI</text>
+
+    <!-- Agent state -->
+    <g transform="translate(415, 10)">
+      <circle cx="0" cy="0" r="3.5" fill="#10b981"/>
+      <text x="8" y="3" class="mono" font-size="9.5" fill="#34d399">OPTIMIZING</text>
+    </g>
+  </g>
+
+  <!-- Title & Description -->
+  <g transform="translate(26, 68)">
+    <text x="0" y="0" class="card-title">MOM AI — SMART ENERGY AGENT</text>
+    <text x="0" y="20" class="card-desc">Autonomous decision agent orchestrating smart-home energy consumption,</text>
+    <text x="0" y="36" class="card-desc">predictive battery peak-shaving, and solar microgrid distribution.</text>
+  </g>
+
+  <!-- Illustration: Smart Grid & Intelligent Energy Nodes -->
+  <g transform="translate(260, 195)">
+    <!-- Central Agent Hub -->
+    <circle cx="0" cy="0" r="28" fill="#064e3b" stroke="#10b981" stroke-width="1.8"/>
+    <path d="M-6 4 L2 -8 L1 0 L7 0 L-1 12 L0 4 Z" fill="#34d399"/>
+
+    <!-- Left Node: Solar / Grid Input -->
+    <g transform="translate(-120, -10)">
+      <rect width="55" height="40" rx="6" fill="#0d2818" stroke="#10b981" stroke-width="1"/>
+      <text x="27" y="24" class="mono" font-size="8.5" fill="#34d399" text-anchor="middle">SOLAR IN</text>
+      <line x1="55" y1="20" x2="92" y2="10" stroke="#34d399" stroke-width="1.2" stroke-dasharray="3 3"/>
+    </g>
+
+    <!-- Right Node: Battery Storage -->
+    <g transform="translate(70, -25)">
+      <rect width="65" height="34" rx="4" fill="#0d2818" stroke="#059669" stroke-width="1"/>
+      <rect x="8" y="10" width="38" height="14" rx="2" fill="#10b981"/>
+      <rect x="48" y="13" width="4" height="8" rx="1" fill="#10b981"/>
+      <line x1="-8" y1="17" x2="0" y2="17" stroke="#34d399" stroke-width="1.2"/>
+    </g>
+
+    <!-- Bottom Node: Subsystem Load Shedding -->
+    <g transform="translate(70, 18)">
+      <text x="0" y="10" class="mono" font-size="8" fill="#94a3b8">HVAC: OFF-PEAK</text>
+      <text x="0" y="22" class="mono" font-size="8" fill="#34d399">SAVINGS: 34.2%</text>
+    </g>
+  </g>
+
+  <!-- Bottom Technology Tags -->
+  <g transform="translate(26, 275)">
+    <rect x="0" y="0" width="75" height="24" class="tag-box"/>
+    <text x="37" y="16" class="tag-text" text-anchor="middle">Python</text>
+
+    <rect x="83" y="0" width="95" height="24" class="tag-box"/>
+    <text x="130" y="16" class="tag-text" text-anchor="middle">RL Agents</text>
+
+    <rect x="186" y="0" width="85" height="24" class="tag-box"/>
+    <text x="228" y="16" class="tag-text" text-anchor="middle">IoT Protocols</text>
+
+    <rect x="279" y="0" width="95" height="24" class="tag-box"/>
+    <text x="326" y="16" class="tag-text" text-anchor="middle">Time-Series ML</text>
+
+    <g transform="translate(450, 4)">
+      <circle cx="8" cy="8" r="12" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <path d="M5 8 H11 M8 5 L11 8 L8 11" stroke="#34d399" stroke-width="1.5" fill="none"/>
+    </g>
+  </g>
+</svg>

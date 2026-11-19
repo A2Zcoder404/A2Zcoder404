@@ -1,0 +1,251 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="100%" role="img">
+  <title>Aditya Mohan Nair — Technology Stack &amp; Toolchain</title>
+  <desc>Structured showcase of verified programming languages, frameworks, AI/ML tools, databases, and development environments.</desc>
+  <defs>
+    <!-- Card and subtle glow filters -->
+    <filter id="stackShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    
+    <pattern id="dotGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.8" fill="#262626"/>
+    </pattern>
+
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .label-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; fill: #888888; text-transform: uppercase; }
+    .item-name { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13px; font-weight: 600; fill: #e6edf3; }
+    .item-sub { font-family: 'SF Mono', Monaco, 'Courier New', Courier, monospace; font-size: 10px; fill: #7d8590; }
+    .card-bg { fill: #0d1117; stroke: #21262d; stroke-width: 1; rx: 8px; }
+    .badge { rx: 6px; fill: #161b22; stroke: #30363d; stroke-width: 1; }
+  </style>
+
+  <!-- Canvas Background -->
+  <rect width="1000" height="560" rx="14" fill="#090d13" stroke="#1f2937" stroke-width="1.2"/>
+  <rect width="1000" height="560" rx="14" fill="url(#dotGrid)" opacity="0.6"/>
+
+  <!-- Top Title Bar -->
+  <g transform="translate(36, 40)">
+    <circle cx="0" cy="0" r="4" fill="#3b82f6"/>
+    <text x="14" y="4" class="label-title">CORE ENGINEERING STACK &amp; CAPABILITIES</text>
+    <line x1="330" y1="0" x2="928" y2="0" stroke="#21262d" stroke-width="1"/>
+    <text x="928" y="4" font-family="'SF Mono', Monaco, monospace" font-size="10" fill="#58a6ff" text-anchor="end">SYS:PROD-READY</text>
+  </g>
+
+  <!-- ================= SECTION 1: LANGUAGES ================= -->
+  <g transform="translate(36, 75)">
+    <rect width="928" height="96" class="card-bg"/>
+    <text x="24" y="28" class="label-title">PROGRAMMING LANGUAGES</text>
+    
+    <!-- TypeScript -->
+    <g transform="translate(24, 42)">
+      <rect width="168" height="42" class="badge"/>
+      <rect x="8" y="7" width="28" height="28" rx="4" fill="#3178c6"/>
+      <text x="16" y="26" font-family="sans-serif" font-weight="800" font-size="15" fill="#ffffff">TS</text>
+      <text x="44" y="22" class="item-name">TypeScript</text>
+      <text x="44" y="34" class="item-sub">Type-safe Full-Stack</text>
+    </g>
+
+    <!-- JavaScript -->
+    <g transform="translate(208, 42)">
+      <rect width="168" height="42" class="badge"/>
+      <rect x="8" y="7" width="28" height="28" rx="4" fill="#f7df1e"/>
+      <text x="17" y="26" font-family="sans-serif" font-weight="900" font-size="15" fill="#000000">JS</text>
+      <text x="44" y="22" class="item-name">JavaScript</text>
+      <text x="44" y="34" class="item-sub">ESNext &amp; Node.js</text>
+    </g>
+
+    <!-- Python -->
+    <g transform="translate(392, 42)">
+      <rect width="168" height="42" class="badge"/>
+      <rect x="8" y="7" width="28" height="28" rx="4" fill="#3776ab"/>
+      <circle cx="18" cy="17" r="3" fill="#ffd43b"/>
+      <circle cx="26" cy="25" r="3" fill="#ffffff"/>
+      <text x="44" y="22" class="item-name">Python</text>
+      <text x="44" y="34" class="item-sub">AI/ML &amp; Systems</text>
+    </g>
+
+    <!-- C / C++ -->
+    <g transform="translate(576, 42)">
+      <rect width="160" height="42" class="badge"/>
+      <rect x="8" y="7" width="28" height="28" rx="4" fill="#00599c"/>
+      <text x="12" y="26" font-family="sans-serif" font-weight="700" font-size="12" fill="#ffffff">C++</text>
+      <text x="44" y="22" class="item-name">C / C++</text>
+      <text x="44" y="34" class="item-sub">Low-level &amp; Algorithms</text>
+    </g>
+
+    <!-- Java -->
+    <g transform="translate(752, 42)">
+      <rect width="152" height="42" class="badge"/>
+      <rect x="8" y="7" width="28" height="28" rx="4" fill="#ea2d2e"/>
+      <text x="15" y="26" font-family="sans-serif" font-weight="800" font-size="14" fill="#ffffff">J</text>
+      <text x="44" y="22" class="item-name">Java</text>
+      <text x="44" y="34" class="item-sub">Object-Oriented</text>
+    </g>
+  </g>
+
+  <!-- ================= SECTION 2: FRONTEND & BACKEND (TWO COLUMNS) ================= -->
+  <!-- Left: Frontend & UI -->
+  <g transform="translate(36, 185)">
+    <rect width="452" height="150" class="card-bg"/>
+    <text x="24" y="28" class="label-title">FRONTEND &amp; INTERACTIVE UI</text>
+
+    <!-- React -->
+    <g transform="translate(24, 42)">
+      <rect width="194" height="42" class="badge"/>
+      <circle cx="22" cy="21" r="11" fill="#61dafb" fill-opacity="0.2" stroke="#61dafb" stroke-width="1.5"/>
+      <circle cx="22" cy="21" r="3" fill="#61dafb"/>
+      <text x="44" y="22" class="item-name">React.js</text>
+      <text x="44" y="34" class="item-sub">SPA &amp; Component Arch</text>
+    </g>
+
+    <!-- Tailwind CSS -->
+    <g transform="translate(234, 42)">
+      <rect width="194" height="42" class="badge"/>
+      <rect x="8" y="7" width="28" height="28" rx="4" fill="#06b6d4" fill-opacity="0.15" stroke="#06b6d4" stroke-width="1"/>
+      <text x="15" y="25" font-family="sans-serif" font-weight="bold" font-size="12" fill="#06b6d4">TW</text>
+      <text x="44" y="22" class="item-name">Tailwind CSS</text>
+      <text x="44" y="34" class="item-sub">Design Systems</text>
+    </g>
+
+    <!-- HTML5 / Modern CSS -->
+    <g transform="translate(24, 94)">
+      <rect width="194" height="42" class="badge"/>
+      <rect x="8" y="7" width="28" height="28" rx="4" fill="#e34f26" fill-opacity="0.2" stroke="#e34f26" stroke-width="1"/>
+      <text x="14" y="25" font-family="sans-serif" font-weight="800" font-size="11" fill="#e34f26">H5</text>
+      <text x="44" y="22" class="item-name">HTML5 / Web APIs</text>
+      <text x="44" y="34" class="item-sub">Semantic &amp; Accessible</text>
+    </g>
+
+    <!-- Canvas / MediaPipe Gestures -->
+    <g transform="translate(234, 94)">
+      <rect width="194" height="42" class="badge"/>
+      <rect x="8" y="7" width="28" height="28" rx="4" fill="#22d3ee" fill-opacity="0.2" stroke="#22d3ee" stroke-width="1"/>
+      <path d="M18 25 L22 17 L26 25 Z" fill="#22d3ee"/>
+      <text x="44" y="22" class="item-name">MediaPipe Vision</text>
+      <text x="44" y="34" class="item-sub">Realtime Hand Gestures</text>
+    </g>
+  </g>
+
+  <!-- Right: Backend, AI & Cloud -->
+  <g transform="translate(512, 185)">
+    <rect width="452" height="150" class="card-bg"/>
+    <text x="24" y="28" class="label-title">BACKEND, DATABASES &amp; AI</text>
+
+    <!-- Node.js / Express -->
+    <g transform="translate(24, 42)">
+      <rect width="194" height="42" class="badge"/>
+      <rect x="8" y="7" width="28" height="28" rx="4" fill="#339933" fill-opacity="0.2" stroke="#339933" stroke-width="1"/>
+      <text x="13" y="25" font-family="sans-serif" font-weight="bold" font-size="11" fill="#339933">NODE</text>
+      <text x="44" y="22" class="item-name">Node.js / Express</text>
+      <text x="44" y="34" class="item-sub">REST APIs &amp; Services</text>
+    </g>
+
+    <!-- Firebase / Supabase -->
+    <g transform="translate(234, 42)">
+      <rect width="194" height="42" class="badge"/>
+      <rect x="8" y="7" width="28" height="28" rx="4" fill="#ffca28" fill-opacity="0.2" stroke="#ffca28" stroke-width="1"/>
+      <path d="M16 27 L22 14 L28 27 Z" fill="#ffca28"/>
+      <text x="44" y="22" class="item-name">Firebase Auth/DB</text>
+      <text x="44" y="34" class="item-sub">Real-time &amp; Serverless</text>
+    </g>
+
+    <!-- SQLite / PostgreSQL -->
+    <g transform="translate(24, 94)">
+      <rect width="194" height="42" class="badge"/>
+      <rect x="8" y="7" width="28" height="28" rx="4" fill="#0284c7" fill-opacity="0.2" stroke="#0284c7" stroke-width="1"/>
+      <ellipse cx="22" cy="18" rx="10" ry="4" fill="none" stroke="#0284c7" stroke-width="1.2"/>
+      <path d="M12 18 v8 c0 2.2 4.5 4 10 4 s10 -1.8 10 -4 v-8" fill="none" stroke="#0284c7" stroke-width="1.2"/>
+      <text x="44" y="22" class="item-name">SQLite / PostgreSQL</text>
+      <text x="44" y="34" class="item-sub">Relational Data Store</text>
+    </g>
+
+    <!-- AI / ML & Gemini API -->
+    <g transform="translate(234, 94)">
+      <rect width="194" height="42" class="badge"/>
+      <rect x="8" y="7" width="28" height="28" rx="4" fill="#8b5cf6" fill-opacity="0.2" stroke="#8b5cf6" stroke-width="1"/>
+      <circle cx="22" cy="21" r="3" fill="#c084fc"/>
+      <circle cx="16" cy="25" r="2" fill="#c084fc"/>
+      <circle cx="28" cy="17" r="2" fill="#c084fc"/>
+      <line x1="16" y1="25" x2="22" y2="21" stroke="#c084fc" stroke-width="0.8"/>
+      <line x1="22" y1="21" x2="28" y2="17" stroke="#c084fc" stroke-width="0.8"/>
+      <text x="44" y="22" class="item-name">AI / LLM &amp; PyTorch</text>
+      <text x="44" y="34" class="item-sub">Intelligent Agents</text>
+    </g>
+  </g>
+
+  <!-- ================= SECTION 3: DEVELOPER TOOLING & DEPLOYMENT ================= -->
+  <g transform="translate(36, 350)">
+    <rect width="928" height="96" class="card-bg"/>
+    <text x="24" y="28" class="label-title">DEVELOPER ENVIRONMENT &amp; CLOUD DEPLOYMENT</text>
+
+    <!-- Git & GitHub -->
+    <g transform="translate(24, 42)">
+      <rect width="168" height="42" class="badge"/>
+      <rect x="8" y="7" width="28" height="28" rx="4" fill="#f05032" fill-opacity="0.2" stroke="#f05032" stroke-width="1"/>
+      <circle cx="18" cy="18" r="3" fill="#f05032"/>
+      <circle cx="26" cy="24" r="3" fill="#f05032"/>
+      <line x1="18" y1="18" x2="26" y2="24" stroke="#f05032" stroke-width="1.2"/>
+      <text x="44" y="22" class="item-name">Git &amp; GitHub</text>
+      <text x="44" y="34" class="item-sub">Version Control &amp; CI</text>
+    </g>
+
+    <!-- Vercel Deployment -->
+    <g transform="translate(208, 42)">
+      <rect width="168" height="42" class="badge"/>
+      <rect x="8" y="7" width="28" height="28" rx="4" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-width="1"/>
+      <polygon points="22,14 29,26 15,26" fill="#ffffff"/>
+      <text x="44" y="22" class="item-name">Vercel</text>
+      <text x="44" y="34" class="item-sub">Edge Deployment</text>
+    </g>
+
+    <!-- Docker -->
+    <g transform="translate(392, 42)">
+      <rect width="168" height="42" class="badge"/>
+      <rect x="8" y="7" width="28" height="28" rx="4" fill="#2496ed" fill-opacity="0.2" stroke="#2496ed" stroke-width="1"/>
+      <rect x="15" y="18" width="4" height="4" fill="#2496ed"/>
+      <rect x="21" y="18" width="4" height="4" fill="#2496ed"/>
+      <rect x="21" y="12" width="4" height="4" fill="#2496ed"/>
+      <text x="44" y="22" class="item-name">Docker</text>
+      <text x="44" y="34" class="item-sub">Containers</text>
+    </g>
+
+    <!-- VS Code -->
+    <g transform="translate(576, 42)">
+      <rect width="160" height="42" class="badge"/>
+      <rect x="8" y="7" width="28" height="28" rx="4" fill="#007acc" fill-opacity="0.2" stroke="#007acc" stroke-width="1"/>
+      <text x="14" y="25" font-family="sans-serif" font-weight="bold" font-size="11" fill="#007acc">VSC</text>
+      <text x="44" y="22" class="item-name">VS Code</text>
+      <text x="44" y="34" class="item-sub">Primary IDE</text>
+    </g>
+
+    <!-- Figma -->
+    <g transform="translate(752, 42)">
+      <rect width="152" height="42" class="badge"/>
+      <rect x="8" y="7" width="28" height="28" rx="4" fill="#f24e1d" fill-opacity="0.2" stroke="#f24e1d" stroke-width="1"/>
+      <circle cx="18" cy="17" r="4" fill="#f24e1d"/>
+      <circle cx="26" cy="25" r="4" fill="#a259ff"/>
+      <text x="44" y="22" class="item-name">Figma</text>
+      <text x="44" y="34" class="item-sub">UI/UX Prototyping</text>
+    </g>
+  </g>
+
+  <!-- ================= BOTTOM STATUS STRIP ================= -->
+  <g transform="translate(36, 465)">
+    <rect width="928" height="55" rx="8" fill="#111827" stroke="#1f2937" stroke-width="1"/>
+    
+    <g transform="translate(24, 28)">
+      <circle cx="0" cy="0" r="3.5" fill="#10b981"/>
+      <text x="14" y="4" font-family="'SF Mono', Monaco, monospace" font-size="11" fill="#e5e7eb">ARCHITECTURAL DISCIPLINE:</text>
+      <text x="195" y="4" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#9ca3af">Modular Clean Code · Reactive State Management · Type Safety · Resilient Cloud Services</text>
+    </g>
+
+    <text x="904" y="32" font-family="'SF Mono', Monaco, monospace" font-size="10" fill="#3b82f6" text-anchor="end">STATUS: ACTIVE</text>
+  </g>
+</svg>

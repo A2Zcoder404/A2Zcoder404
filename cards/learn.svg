@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="297.3333333333333" height="172" viewBox="0 0 297.3333333333333 172" role="img" aria-label="03 / RESEARCH: Engineering">
+  <defs>
+    <style>
+      
+@keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.9); } }
+@keyframes nudge { 0%, 100% { transform: none; } 50% { transform: translate(3px, -3px); } }
+
+.live { animation: pulse 1.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.n { transform-box: fill-box; animation: nudge 2s ease-in-out infinite; }
+
+      .tag { font-family: 'SF Mono', Monaco, 'Courier New', Courier, monospace; font-size: 10px; font-weight: 700; letter-spacing: 1px; fill: #d97706; }
+      .title { font-family: 'Instrument Serif', Georgia, serif; font-size: 28px; fill: #111111; letter-spacing: -0.3px; font-weight: 500; }
+      .body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 12px; font-weight: 500; fill: #52525b; line-height: 1.5; }
+      .foot { font-family: 'SF Mono', Monaco, 'Courier New', Courier, monospace; font-size: 9.5px; font-weight: 700; fill: #27272a; }
+    </style>
+  </defs>
+
+  <g transform="translate(12 0)">
+    <!-- Card Frame -->
+    <rect width="285.3333333333333" height="160" rx="14" fill="#f4f4f2" stroke="#d4d4d8" stroke-width="1.2"/>
+
+    <!-- Top Tag -->
+    <g transform="translate(20, 26)">
+      <circle cx="0" cy="0" r="3.5" fill="#d97706"/>
+      <text x="10" y="3.5" class="tag">03 / RESEARCH</text>
+    </g>
+
+    <!-- Title & Body -->
+    <g transform="translate(20, 64)">
+      <text x="0" y="0" class="title">Engineering</text>
+      <text x="0" y="24" class="body">Computer engineering, low-level</text>
+      <text x="0" y="42" class="body">systems &amp; striveforexcellence.in.</text>
+    </g>
+
+    <!-- Footer link -->
+    <g transform="translate(20, 138)">
+      <text x="0" y="0" class="foot">READ BLOG</text>
+      <text x="237.33333333333331" y="0" class="tag n">→</text>
+    </g>
+  </g>
+</svg>

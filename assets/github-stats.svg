@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 250" width="100%" role="img">
+  <title>Aditya Mohan Nair — Verified GitHub Profile Metrics</title>
+  <desc>Verified public repository, follower, and engagement statistics from the GitHub REST API for @A2ZCoder404.</desc>
+  <defs>
+    <filter id="cardGlow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    <linearGradient id="blueMetricGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: 'SF Mono', Monaco, 'Courier New', monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .val-text { font-family: 'SF Mono', Monaco, monospace; font-size: 26px; font-weight: 800; fill: #f0f6fc; }
+    .lbl-text { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 11px; font-weight: 600; fill: #8b949e; letter-spacing: 0.5px; }
+    .sub-meta { font-family: 'SF Mono', Monaco, monospace; font-size: 9px; fill: #58a6ff; }
+  </style>
+
+  <!-- Container Box -->
+  <rect width="520" height="250" rx="12" fill="#0d1117" stroke="#21262d" stroke-width="1.2" filter="url(#cardGlow)"/>
+
+  <!-- Card Header -->
+  <g transform="translate(24, 26)">
+    <circle cx="0" cy="0" r="3.5" fill="#38bdf8"/>
+    <text x="12" y="4" class="sans" font-size="11" font-weight="700" letter-spacing="1.5" fill="#c9d1d9">GITHUB DEVELOPER METRICS</text>
+    <text x="472" y="4" class="mono" font-size="10" fill="#8b949e" text-anchor="end">@A2ZCoder404</text>
+    <line x1="0" y1="16" x2="472" y2="16" stroke="#21262d" stroke-width="1"/>
+  </g>
+
+  <!-- Metric 1: Public Repos -->
+  <g transform="translate(24, 66)">
+    <rect width="144" height="80" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <!-- Repo icon -->
+    <path d="M16 22 c0 -1.1 0.9 -2 2 -2 h8 c1.1 0 2 0.9 2 2 v10 l-6 -3 l-6 3 z" fill="none" stroke="#38bdf8" stroke-width="1.4"/>
+    <text x="36" y="24" class="lbl-text">REPOSITORIES</text>
+    <text x="16" y="56" class="val-text" id="stat-repos">8</text>
+    <text x="16" y="70" class="sub-meta">Public &amp; Verified</text>
+  </g>
+
+  <!-- Metric 2: Followers -->
+  <g transform="translate(188, 66)">
+    <rect width="144" height="80" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <!-- User icon -->
+    <circle cx="22" cy="20" r="4" fill="none" stroke="#8b5cf6" stroke-width="1.4"/>
+    <path d="M14 30 c0 -3 4 -4 8 -4 s8 1 8 4" fill="none" stroke="#8b5cf6" stroke-width="1.4"/>
+    <text x="36" y="24" class="lbl-text">FOLLOWERS</text>
+    <text x="16" y="56" class="val-text" id="stat-followers">9</text>
+    <text x="16" y="70" class="sub-meta" fill="#a855f7">Developer Network</text>
+  </g>
+
+  <!-- Metric 3: Live Edge Deploys -->
+  <g transform="translate(352, 66)">
+    <rect width="144" height="80" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <!-- Globe/Edge icon -->
+    <circle cx="22" cy="22" r="6" fill="none" stroke="#10b981" stroke-width="1.4"/>
+    <path d="M16 22 h12 M22 16 c-2 3 -2 9 0 12 M22 16 c2 3 2 9 0 12" fill="none" stroke="#10b981" stroke-width="1"/>
+    <text x="36" y="24" class="lbl-text">DEPLOYMENTS</text>
+    <text x="16" y="56" class="val-text" id="stat-deploys">3</text>
+    <text x="16" y="70" class="sub-meta" fill="#34d399">Production Edge</text>
+  </g>
+
+  <!-- Metric 4: Authored Code Volume & Stacks Row -->
+  <g transform="translate(24, 160)">
+    <rect width="472" height="66" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    
+    <g transform="translate(20, 24)">
+      <text x="0" y="0" class="lbl-text">TOTAL AUTHORED CODEBASE</text>
+      <text x="0" y="26" class="mono" font-size="20" font-weight="700" fill="#f0f6fc">576.5 KB</text>
+      <text x="135" y="26" class="mono" font-size="10" fill="#8b949e">Across 5 Primary Stacks</text>
+    </g>
+
+    <line x1="260" y1="12" x2="260" y2="54" stroke="#30363d" stroke-width="1"/>
+
+    <g transform="translate(280, 24)">
+      <text x="0" y="0" class="lbl-text">ENGINEERING PROFILE</text>
+      <text x="0" y="16" class="sans" font-size="11" font-weight="600" fill="#38bdf8">Aditya Mohan Nair</text>
+      <text x="0" y="30" class="mono" font-size="10" fill="#8b949e">Active Contributor Since Aug 2024</text>
+    </g>
+  </g>
+</svg>

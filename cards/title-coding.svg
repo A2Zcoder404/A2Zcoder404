@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="56" viewBox="0 0 880 56" role="img" aria-label="What I am coding">
+  <defs>
+    <style>
+      .title { font-family: 'Instrument Serif', Georgia, serif; font-size: 28px; fill: #111111; letter-spacing: -0.3px; font-weight: 500; }
+      .rule { stroke: #d4d4d8; stroke-width: 1; }
+      .tag { font-family: 'SF Mono', Monaco, 'Courier New', Courier, monospace; font-size: 9.5px; font-weight: 700; letter-spacing: 1.2px; fill: #71717a; }
+      @media (prefers-color-scheme: dark) {
+        .title { fill: #f4f4f5; }
+        .rule { stroke: #3f3f46; }
+        .tag { fill: #a1a1aa; }
+      }
+    </style>
+  </defs>
+
+  <g transform="translate(0, 36)">
+    <text x="0" y="0" class="title">What I&apos;m coding</text>
+    <line x1="180" y1="-8" x2="730" y2="-8" class="rule"/>
+    <text x="880" y="-3" class="tag" text-anchor="end">FEATURED REPOSITORIES</text>
+  </g>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220" width="100%" role="img">
+  <title>Aditya Mohan Nair — Contribution Streaks &amp; Rhythm</title>
+  <desc>Engineering cadence, commit streaks, and continuous development metrics for @A2ZCoder404.</desc>
+  <defs>
+    <filter id="streakGlow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'SF Mono', Monaco, 'Courier New', monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .stat-val { font-family: 'SF Mono', Monaco, monospace; font-size: 26px; font-weight: 800; fill: #f0f6fc; }
+    .stat-label { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 11px; font-weight: 600; fill: #8b949e; letter-spacing: 0.5px; }
+  </style>
+
+  <!-- Frame Background -->
+  <rect width="520" height="220" rx="12" fill="#0d1117" stroke="#21262d" stroke-width="1.2" filter="url(#streakGlow)"/>
+
+  <!-- Header -->
+  <g transform="translate(24, 26)">
+    <circle cx="0" cy="0" r="3.5" fill="#f59e0b"/>
+    <text x="12" y="4" class="sans" font-size="11" font-weight="700" letter-spacing="1.5" fill="#c9d1d9">ACTIVITY RHYTHM &amp; STREAKS</text>
+    <text x="472" y="4" class="mono" font-size="10" fill="#f59e0b" text-anchor="end">CADENCE: ACTIVE</text>
+    <line x1="0" y1="16" x2="472" y2="16" stroke="#21262d" stroke-width="1"/>
+  </g>
+
+  <!-- 3 Streak Columns -->
+  <!-- Col 1: Total Contributions -->
+  <g transform="translate(24, 66)">
+    <rect width="144" height="85" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <!-- Target / Commit icon -->
+    <circle cx="22" cy="22" r="5" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <circle cx="22" cy="22" r="2" fill="#38bdf8"/>
+    <text x="36" y="24" class="stat-label">TOTAL ACTIONS</text>
+    <text x="16" y="58" class="stat-val" id="total-actions">240+</text>
+    <text x="16" y="73" class="mono" font-size="9" fill="#58a6ff">Commits &amp; Merges</text>
+  </g>
+
+  <!-- Col 2: Current Active Streak -->
+  <g transform="translate(188, 66)">
+    <rect width="144" height="85" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <!-- Flame icon -->
+    <path d="M22 14 C22 14 26 19 26 23 C26 26 24 28 22 28 C20 28 18 26 18 23 C18 21 19 19 22 14 Z" fill="#f59e0b"/>
+    <text x="36" y="24" class="stat-label">CURRENT STREAK</text>
+    <text x="16" y="58" class="stat-val" fill="#f59e0b" id="curr-streak">12 Days</text>
+    <text x="16" y="73" class="mono" font-size="9" fill="#fbbf24">Consistent Push Cycle</text>
+  </g>
+
+  <!-- Col 3: Longest Recorded Streak -->
+  <g transform="translate(352, 66)">
+    <rect width="144" height="85" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <!-- Trophy / Star icon -->
+    <path d="M22 14 L24 19 L29 19 L25 22 L27 27 L22 24 L17 27 L19 22 L15 19 L20 19 Z" fill="#10b981"/>
+    <text x="36" y="24" class="stat-label">LONGEST STREAK</text>
+    <text x="16" y="58" class="stat-val" fill="#34d399" id="long-streak">28 Days</text>
+    <text x="16" y="73" class="mono" font-size="9" fill="#34d399">Verified Record</text>
+  </g>
+
+  <!-- Bottom Verification Bar -->
+  <g transform="translate(24, 168)">
+    <rect width="472" height="38" rx="6" fill="#111827" stroke="#1f2937" stroke-width="1"/>
+    <g transform="translate(16, 22)">
+      <circle cx="0" cy="0" r="3" fill="#38bdf8"/>
+      <text x="10" y="3" class="mono" font-size="9" fill="#9ca3af">INTEGRATION: SYNCED HOURLY VIA GRAPHQL / WORKFLOW DISPATCH</text>
+      <text x="440" y="3" class="mono" font-size="9" fill="#10b981" text-anchor="end">SYNC: LIVE</text>
+    </g>
+  </g>
+</svg>

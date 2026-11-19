@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="132" viewBox="0 0 880 132" role="img" aria-label="Monthly activity and streak stats">
+  <defs>
+    <style>
+      
+@keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.9); } }
+@keyframes nudge { 0%, 100% { transform: none; } 50% { transform: translate(3px, -3px); } }
+
+.live { animation: pulse 1.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.n { transform-box: fill-box; animation: nudge 2s ease-in-out infinite; }
+
+      .num { font-family: 'Instrument Serif', Georgia, serif; font-size: 34px; fill: #111111; font-weight: 500; }
+      .lbl { font-family: 'SF Mono', Monaco, 'Courier New', Courier, monospace; font-size: 9.5px; font-weight: 700; letter-spacing: 1px; fill: #111111; }
+      .meta { font-family: 'SF Mono', Monaco, 'Courier New', Courier, monospace; font-size: 10px; font-weight: 600; fill: #52525b; }
+    </style>
+  </defs>
+
+  <rect width="880" height="120" rx="14" fill="#f4f4f2" stroke="#d4d4d8" stroke-width="1.2"/>
+
+  <!-- Left: Monthly Bars -->
+  <g>
+    <text x="42" y="24" class="lbl">ACTIVITY BY MONTH</text>
+    
+        <g>
+          <rect x="42" y="75.0" width="16" height="11.0" rx="3" fill="#93c5fd"/>
+          <text x="50.0" y="100" font-family="'SF Mono', Monaco, 'Courier New', Courier, monospace" font-size="8.5" font-weight="600" fill="#52525b" text-anchor="middle">Dec</text>
+        </g>
+        <g>
+          <rect x="70" y="68.7" width="16" height="17.3" rx="3" fill="#93c5fd"/>
+          <text x="78.0" y="100" font-family="'SF Mono', Monaco, 'Courier New', Courier, monospace" font-size="8.5" font-weight="600" fill="#52525b" text-anchor="middle">Jan</text>
+        </g>
+        <g>
+          <rect x="98" y="71.9" width="16" height="14.1" rx="3" fill="#93c5fd"/>
+          <text x="106.0" y="100" font-family="'SF Mono', Monaco, 'Courier New', Courier, monospace" font-size="8.5" font-weight="600" fill="#52525b" text-anchor="middle">Feb</text>
+        </g>
+        <g>
+          <rect x="126" y="60.9" width="16" height="25.1" rx="3" fill="#3b82f6"/>
+          <text x="134.0" y="100" font-family="'SF Mono', Monaco, 'Courier New', Courier, monospace" font-size="8.5" font-weight="600" fill="#52525b" text-anchor="middle">Mar</text>
+        </g>
+        <g>
+          <rect x="154" y="64.0" width="16" height="22.0" rx="3" fill="#93c5fd"/>
+          <text x="162.0" y="100" font-family="'SF Mono', Monaco, 'Courier New', Courier, monospace" font-size="8.5" font-weight="600" fill="#52525b" text-anchor="middle">Apr</text>
+        </g>
+        <g>
+          <rect x="182" y="71.1" width="16" height="14.9" rx="3" fill="#93c5fd"/>
+          <text x="190.0" y="100" font-family="'SF Mono', Monaco, 'Courier New', Courier, monospace" font-size="8.5" font-weight="600" fill="#52525b" text-anchor="middle">May</text>
+        </g>
+        <g>
+          <rect x="210" y="67.1" width="16" height="18.9" rx="3" fill="#93c5fd"/>
+          <text x="218.0" y="100" font-family="'SF Mono', Monaco, 'Courier New', Courier, monospace" font-size="8.5" font-weight="600" fill="#52525b" text-anchor="middle">Jun</text>
+        </g>
+        <g>
+          <rect x="238" y="56.1" width="16" height="29.9" rx="3" fill="#3b82f6"/>
+          <text x="246.0" y="100" font-family="'SF Mono', Monaco, 'Courier New', Courier, monospace" font-size="8.5" font-weight="600" fill="#52525b" text-anchor="middle">Jul</text>
+        </g>
+        <g>
+          <rect x="266" y="53.0" width="16" height="33.0" rx="3" fill="#3b82f6"/>
+          <text x="274.0" y="100" font-family="'SF Mono', Monaco, 'Courier New', Courier, monospace" font-size="8.5" font-weight="600" fill="#52525b" text-anchor="middle">Aug</text>
+        </g>
+        <g>
+          <rect x="294" y="58.5" width="16" height="27.5" rx="3" fill="#3b82f6"/>
+          <text x="302.0" y="100" font-family="'SF Mono', Monaco, 'Courier New', Courier, monospace" font-size="8.5" font-weight="600" fill="#52525b" text-anchor="middle">Sep</text>
+        </g>
+        <g>
+          <rect x="322" y="48.3" width="16" height="37.7" rx="3" fill="#3b82f6"/>
+          <text x="330.0" y="100" font-family="'SF Mono', Monaco, 'Courier New', Courier, monospace" font-size="8.5" font-weight="600" fill="#52525b" text-anchor="middle">Oct</text>
+        </g>
+        <g>
+          <rect x="350" y="42.0" width="16" height="44.0" rx="3" fill="#2f55ff"/>
+          <text x="358.0" y="100" font-family="'SF Mono', Monaco, 'Courier New', Courier, monospace" font-size="8.5" font-weight="600" fill="#52525b" text-anchor="middle">Nov</text>
+        </g>
+  </g>
+
+  <!-- Divider -->
+  <line x1="410" y1="20" x2="410" y2="100" stroke="#d4d4d8" stroke-width="1"/>
+
+  <!-- Center Stat: Current Streak -->
+  <g transform="translate(440, 36)">
+    <text x="0" y="0" class="lbl">CURRENT STREAK</text>
+    <text x="0" y="38" class="num">12 <tspan font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#2f55ff" font-weight="bold">days</tspan></text>
+    <text x="0" y="56" class="meta">Consistent development</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="630" y1="20" x2="630" y2="100" stroke="#d4d4d8" stroke-width="1"/>
+
+  <!-- Right Stat: Verified Metrics -->
+  <g transform="translate(660, 36)">
+    <text x="0" y="0" class="lbl">VERIFIED CODEBASE</text>
+    <text x="0" y="38" class="num">576.5 <tspan font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#52525b" font-weight="bold">KB</tspan></text>
+    <text x="0" y="56" class="meta">Across 8 public repositories</text>
+  </g>
+</svg>

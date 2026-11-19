@@ -1,0 +1,133 @@
+{
+  "username": "A2Zcoder404",
+  "name": "Aditya Nair",
+  "bio": "Aspiring developer | UI/UX enthusiast | Building, learning, and growing one project at a time.",
+  "avatar_url": "https://avatars.githubusercontent.com/u/177934456?v=4",
+  "blog": "https://striveforexcellence.in/",
+  "twitter": "zcoder404",
+  "public_repos": 8,
+  "followers": 9,
+  "following": 8,
+  "created_at": "2024-08-09T11:13:23Z",
+  "total_code_bytes": 590325,
+  "language_distribution": {
+    "TypeScript": {
+      "bytes": 341306,
+      "percentage": 57.8
+    },
+    "Python": {
+      "bytes": 119540,
+      "percentage": 20.2
+    },
+    "HTML": {
+      "bytes": 46175,
+      "percentage": 7.8
+    },
+    "CSS": {
+      "bytes": 42432,
+      "percentage": 7.2
+    },
+    "JavaScript": {
+      "bytes": 39175,
+      "percentage": 6.6
+    },
+    "PowerShell": {
+      "bytes": 1697,
+      "percentage": 0.3
+    }
+  },
+  "repositories": [
+    {
+      "name": "gst",
+      "description": "",
+      "primary_language": "HTML",
+      "languages": {
+        "HTML": 17742,
+        "JavaScript": 13000,
+        "PowerShell": 1697,
+        "CSS": 991
+      },
+      "stars": 0,
+      "forks": 0,
+      "url": "https://github.com/A2Zcoder404/gst",
+      "homepage": "https://gst-bay-rho.vercel.app"
+    },
+    {
+      "name": "Web-Programming",
+      "description": "",
+      "primary_language": "HTML",
+      "languages": {
+        "HTML": 24722,
+        "CSS": 9960
+      },
+      "stars": 0,
+      "forks": 0,
+      "url": "https://github.com/A2Zcoder404/Web-Programming",
+      "homepage": null
+    },
+    {
+      "name": "ironeight",
+      "description": "",
+      "primary_language": "JavaScript",
+      "languages": {
+        "JavaScript": 23863,
+        "CSS": 19697,
+        "HTML": 3711
+      },
+      "stars": 0,
+      "forks": 1,
+      "url": "https://github.com/A2Zcoder404/ironeight",
+      "homepage": "https://ironeight.vercel.app"
+    },
+    {
+      "name": "sample-project",
+      "description": "AI therapist to support you",
+      "primary_language": "Other",
+      "languages": {
+        "TypeScript": 262079,
+        "CSS": 3982,
+        "JavaScript": 970
+      },
+      "stars": 0,
+      "forks": 0,
+      "url": "https://github.com/A2Zcoder404/sample-project",
+      "homepage": "https://abyss-io.vercel.app"
+    },
+    {
+      "name": "medicine-reminder-app",
+      "description": "",
+      "primary_language": "Python",
+      "languages": {
+        "Python": 119540
+      },
+      "stars": 0,
+      "forks": 0,
+      "url": "https://github.com/A2Zcoder404/medicine-reminder-app",
+      "homepage": null
+    },
+    {
+      "name": "GlowUp",
+      "description": "GlowUp - A gamified wellness & habit tracker that helps you build consistency with streaks, badges, XP points, and daily motivational quotes.",
+      "primary_language": "TypeScript",
+      "languages": {
+        "TypeScript": 79227,
+        "CSS": 7802,
+        "JavaScript": 1342
+      },
+      "stars": 0,
+      "forks": 0,
+      "url": "https://github.com/A2Zcoder404/GlowUp",
+      "homepage": null
+    },
+    {
+      "name": "A2Zcoder404",
+      "description": "",
+      "primary_language": "Other",
+      "languages": {},
+      "stars": 0,
+      "forks": 0,
+      "url": "https://github.com/A2Zcoder404/A2Zcoder404",
+      "homepage": null
+    }
+  ]
+}
