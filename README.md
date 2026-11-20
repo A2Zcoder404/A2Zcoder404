@@ -7,9 +7,9 @@
 <a href="https://a2zcoder404.com"><img src="./cards/hero.svg" width="100%" alt="Aditya Nair. I build intelligent systems, engineer autonomous agents, and turn ambitious ideas into real-world products." /></a><br>
 <img src="./cards/heatmap.svg" width="100%" alt="Aditya's contribution graph in cobalt blue, refreshed daily" /><br>
 <img src="./cards/activity.svg" width="100%" alt="Contributions in the last 12 months, by month, with streak and codebase stats" /><br>
-<a href="https://github.com/A2Zcoder404?tab=repositories"><img src="./cards/build.svg" width="33.333%" alt="BUILD: 4 systems" /></a><a href="https://github.com/A2Zcoder404/ironeight"><img src="./cards/agents.svg" width="33.333%" alt="AGENTS & VISION: Realtime AI & gesture control" /></a><a href="https://striveforexcellence.in"><img src="./cards/learn.svg" width="33.333%" alt="LEARN: Computer engineering & research blog" /></a><br>
+<a href="https://github.com/A2Zcoder404?tab=repositories"><img src="./cards/build.svg" width="33.333%" alt="BUILD: 4 systems" /></a><a href="https://github.com/Pixel-Nova-v1-1/NOVATRACE"><img src="./cards/agents.svg" width="33.333%" alt="AGENTS & VISION: Realtime AI & threat forensics" /></a><a href="https://a2zcoder404.com"><img src="./cards/learn.svg" width="33.333%" alt="LEARN: Computer engineering & research blog" /></a><br>
 <img src="./cards/title-coding.svg" width="100%" alt="What I'm coding" /><br>
-<a href="https://github.com/A2Zcoder404/ironeight"><img src="./cards/repo-ironeight.svg" width="33.333%" alt="ironeight — Gesture HUD" /></a><a href="https://github.com/A2Zcoder404/Mind-Care"><img src="./cards/repo-mindcare.svg" width="33.333%" alt="Mind-Care — Mental Health App" /></a><a href="https://github.com/A2Zcoder404/GlowUp"><img src="./cards/repo-glowup.svg" width="33.333%" alt="GlowUp — Gamified Habit Tracker" /></a>
+<a href="https://github.com/Pixel-Nova-v1-1/NOVATRACE"><img src="./cards/repo-novatrace.svg" width="33.333%" alt="NOVATRACE" /></a><a href="https://github.com/Pixel-Nova-v1-1/AmoghaFoundation"><img src="./cards/repo-amogha.svg" width="33.333%" alt="AmoghaFoundation" /></a><a href="https://github.com/Pixel-Nova-v1-1/ZeStay"><img src="./cards/repo-zestay.svg" width="33.333%" alt="ZeStay" /></a>
 </div>
 
 <p align="center">

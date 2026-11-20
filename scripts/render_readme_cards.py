@@ -13,6 +13,7 @@ from PIL import Image, ImageOps, ImageEnhance
 from build_aditya_hero import build_hero_svg
 from build_aditya_heatmap import build_heatmap_svg
 from build_aditya_activity import build_activity_svg
+from build_aditya_repo_cards import build_all_repo_cards
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, "..")
@@ -254,18 +255,8 @@ def main():
 
     render_title_coding()
 
-    # Three Featured Repositories
-    render_repo_card("repo-ironeight.svg", "ironeight", "JAVASCRIPT · MEDIAPIPE",
-                     ["Arc Reactor HUD with webcam hand", "gesture control & live Vercel demo."],
-                     BLUE, 0)
-    
-    render_repo_card("repo-mindcare.svg", "Mind-Care", "FULLSTACK · FIREBASE",
-                     ["Comprehensive mental health app with", "clinical tests & therapist finder."],
-                     GREEN, GAP)
-    
-    render_repo_card("repo-glowup.svg", "GlowUp", "TYPESCRIPT · REACT",
-                     ["Gamified habit consistency tracker", "built for CSI Hackathon prototype."],
-                     "#8b5cf6", GAP)
+    # Three Featured Repositories (Avi Vashishta Typography & Layout)
+    build_all_repo_cards()
 
     print("[✓] All Avi-inspired cards generated successfully in cards/!")
 
