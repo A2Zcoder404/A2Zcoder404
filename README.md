@@ -15,18 +15,3 @@
 <p align="center">
 <a href="https://a2zcoder404.com">a2zcoder404.com</a> &nbsp;/&nbsp; <a href="https://twitter.com/zcoder404">twitter: @zcoder404</a> &nbsp;/&nbsp; <a href="https://github.com/A2Zcoder404">github: @A2ZCoder404</a>
 </p>
-
-<br/>
-
-<details>
-<summary align="center"><b>📐 Click to Expand Engineering Architecture &amp; Interactive Diagrams</b></summary>
-<br/>
-
-<div align="center">
-  <img src="./assets/architecture.svg" alt="End-to-End System Architecture Diagram" width="100%" /><br/><br/>
-  <img src="./assets/tech-stack.svg" alt="Core Engineering Stack & Toolchain" width="100%" /><br/><br/>
-  <img src="./assets/ai-illustration.svg" alt="Autonomous Agents & Neural Computing Topology" width="100%" /><br/><br/>
-  <img src="./assets/terminal.svg" alt="Developer Terminal" width="90%" />
-</div>
-
-</details>
