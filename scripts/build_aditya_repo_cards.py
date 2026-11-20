@@ -35,7 +35,7 @@ REPOS_CONFIG = [
             "with easy-to-maintain templates."
         ],
         "footer": "PHP  ·  Internship",
-        "accent": "#2f55ff",
+        "accent": "#ef3b2d",
         "delay": 4.75
     },
     {
@@ -47,7 +47,7 @@ REPOS_CONFIG = [
             "and verified student housing."
         ],
         "footer": "React  ·  Fullstack",
-        "accent": "#2f55ff",
+        "accent": "#f5a623",
         "delay": 4.90
     }
 ]

@@ -14,6 +14,7 @@ from build_aditya_hero import build_hero_svg
 from build_aditya_heatmap import build_heatmap_svg
 from build_aditya_activity import build_activity_svg
 from build_aditya_repo_cards import build_all_repo_cards
+from build_aditya_world_cards import build_all_world_cards
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, "..")
@@ -159,33 +160,30 @@ def render_world_tile(filename, index_tag, title, body_text, accent, link_label,
     print(f"[✓] Rendered cards/{filename}")
 
 # ==============================================================================
-# 5. TITLE CARD ("WHAT I'M CODING" — Dark Mode Aware)
+# 5. TITLE CARD ("WHAT I'M CODING" — Exact Avi Vashishta Serif Title)
 # ==============================================================================
 def render_title_coding():
-    h = 56
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{h}" viewBox="0 0 {W} {h}" role="img" aria-label="What I am coding">
-  <defs>
-    <style>
-      .title {{ font-family: {SERIF}; font-size: 28px; fill: #111111; letter-spacing: -0.3px; font-weight: 500; }}
-      .rule {{ stroke: #d4d4d8; stroke-width: 1; }}
-      .tag {{ font-family: {MONO}; font-size: 9.5px; font-weight: 700; letter-spacing: 1.2px; fill: #71717a; }}
-      @media (prefers-color-scheme: dark) {{
-        .title {{ fill: #f4f4f5; }}
-        .rule {{ stroke: #3f3f46; }}
-        .tag {{ fill: #a1a1aa; }}
-      }}
-    </style>
-  </defs>
+    fonts_css_path = os.path.join(ROOT, "data", "hero_fonts.css")
+    with open(fonts_css_path, "r", encoding="utf-8") as f:
+        css = f.read().strip()
 
-  <g transform="translate(0, 36)">
-    <text x="0" y="0" class="title">What I&apos;m coding</text>
-    <line x1="180" y1="-8" x2="{W - 150}" y2="-8" class="rule"/>
-    <text x="{W}" y="-3" class="tag" text-anchor="end">FEATURED REPOSITORIES</text>
-  </g>
-</svg>'''
+    # Dark variant
+    dark_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="880.000" height="64" viewBox="0 0 880.000 64" role="img" aria-label="What I&#x27;m coding"><title>What I&#x27;m coding</title><style>{css}</style><text class="r" style="animation-delay:4.40s" x="2" y="46" font-family="'Instrument Serif', Georgia, serif" font-size="34" fill="#e6edf3">What I&#x27;m <tspan font-style="italic">coding</tspan></text></svg>'''
+    with open(os.path.join(CARDS, "title-coding-dark.svg"), "w", encoding="utf-8") as f:
+        f.write(dark_svg)
+
+    # Light variant
+    light_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="880.000" height="64" viewBox="0 0 880.000 64" role="img" aria-label="What I&#x27;m coding"><title>What I&#x27;m coding</title><style>{css}</style><text class="r" style="animation-delay:4.40s" x="2" y="46" font-family="'Instrument Serif', Georgia, serif" font-size="34" fill="#111111">What I&#x27;m <tspan font-style="italic">coding</tspan></text></svg>'''
+    with open(os.path.join(CARDS, "title-coding-light.svg"), "w", encoding="utf-8") as f:
+        f.write(light_svg)
+
+    # Default auto-switching SVG
+    auto_css = css + "\n@media (prefers-color-scheme: dark) { .title-text { fill: #e6edf3 !important; } }"
+    auto_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="880.000" height="64" viewBox="0 0 880.000 64" role="img" aria-label="What I&#x27;m coding"><title>What I&#x27;m coding</title><style>{auto_css}</style><text class="r title-text" style="animation-delay:4.40s" x="2" y="46" font-family="'Instrument Serif', Georgia, serif" font-size="34" fill="#111111">What I&#x27;m <tspan font-style="italic">coding</tspan></text></svg>'''
     with open(os.path.join(CARDS, "title-coding.svg"), "w", encoding="utf-8") as f:
-        f.write(svg)
-    print("[✓] Rendered cards/title-coding.svg")
+        f.write(auto_svg)
+
+    print("[✓] Rendered cards/title-coding.svg, title-coding-dark.svg, title-coding-light.svg")
 
 # ==============================================================================
 # 6. THREE REPO CARDS (ironeight, Mind-Care, GlowUp)
@@ -240,18 +238,8 @@ def main():
     render_heatmap()
     render_activity()
     
-    # Three Worlds Tiles
-    render_world_tile("build.svg", "01 / BUILD", "4 Systems",
-                      ["Full-stack applications, gesture HUDs", "& clinical scheduling engines."],
-                      BLUE, "EXPLORE STACK", 0)
-    
-    render_world_tile("agents.svg", "02 / AGENTS & VISION", "Realtime AI",
-                      ["Autonomous decision models, MediaPipe", "vision tracking & threat forensics."],
-                      RED, "AI ARCHITECTURE", GAP)
-    
-    render_world_tile("learn.svg", "03 / RESEARCH", "Engineering",
-                      ["Computer engineering, low-level", "systems & striveforexcellence.in."],
-                      AMBER, "READ BLOG", GAP)
+    # Three Worlds Tiles (Avi Vashishta Solid Cards: Blue, Red, Yellow)
+    build_all_world_cards()
 
     render_title_coding()
 
