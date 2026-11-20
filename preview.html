@@ -121,6 +121,11 @@
       font-weight: 600;
       color: var(--text-main);
     }
+
+    .title-dark { display: block; }
+    .title-light { display: none; }
+    [data-theme="light"] .title-dark { display: none !important; }
+    [data-theme="light"] .title-light { display: block !important; }
   </style>
 </head>
 <body data-theme="dark">
@@ -158,7 +163,8 @@
         <a href="https://www.linkedin.com/school/pillaiengineering/posts/?feedView=all" target="_blank" style="display:inline-block; width:33.333%;"><img src="./cards/build.svg" width="100%" alt="ENGINEERING: Computer Engineering" /></a><a href="https://github.com/A2Zcoder404?tab=repositories" target="_blank" style="display:inline-block; width:33.333%;"><img src="./cards/agents.svg" width="100%" alt="BUILDING: 8 Repos" /></a><a href="https://www.linkedin.com/in/aditya-nair-0739b7321/recent-activity/all/" target="_blank" style="display:inline-block; width:33.333%;"><img src="./cards/learn.svg" width="100%" alt="ACHIEVEMENTS: 6 Awards" /></a><br>
 
         <!-- 5. Title Card -->
-        <picture><source media="(prefers-color-scheme: dark)" srcset="./cards/title-coding-dark.svg" /><img src="./cards/title-coding-light.svg" width="100%" alt="What I'm coding" /></picture><br>
+        <img class="title-dark" src="./cards/title-coding-dark.svg" width="100%" alt="What I'm coding" />
+        <img class="title-light" src="./cards/title-coding-light.svg" width="100%" alt="What I'm coding" /><br>
 
         <!-- 6. Three Repo Cards (Row of 3) -->
         <a href="https://github.com/Pixel-Nova-v1-1/NOVATRACE" target="_blank" style="display:inline-block; width:33.333%;"><img src="./cards/repo-novatrace.svg" width="100%" alt="NOVATRACE" /></a><a href="https://github.com/Pixel-Nova-v1-1/AmoghaFoundation" target="_blank" style="display:inline-block; width:33.333%;"><img src="./cards/repo-amogha.svg" width="100%" alt="AmoghaFoundation" /></a><a href="https://github.com/Pixel-Nova-v1-1/ZeStay" target="_blank" style="display:inline-block; width:33.333%;"><img src="./cards/repo-zestay.svg" width="100%" alt="ZeStay" /></a>
