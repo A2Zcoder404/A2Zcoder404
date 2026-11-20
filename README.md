@@ -1,40 +1,21 @@
-# 👋 Hey, I'm Aditya Nair
+<!-- Every card is an animated SVG drawn by scripts/render_readme_cards.py and refreshed daily
+     by .github/workflows/update-profile.yml. Design inspired by Avi Vashishta's "Three Worlds"
+     editorial paper & ink architecture, customized for Aditya Nair (@A2ZCoder404).
+     Spacing is baked into the SVGs, so keep this block free of blank lines and keep the cards in
+     a row on one line with no spaces between them. -->
+<div align="center">
+<a href="https://a2zcoder404.com"><img src="./cards/hero.svg" width="100%" alt="Aditya Nair. I build intelligent systems, engineer autonomous agents, and turn ambitious ideas into real-world products." /></a><br>
+<img src="./cards/heatmap.svg" width="100%" alt="Aditya's contribution graph in cobalt blue, refreshed daily" /><br>
+<img src="./cards/activity.svg" width="100%" alt="Contributions in the last 12 months, by month, with streak and codebase stats" /><br>
+<a href="https://www.linkedin.com/school/pillaiengineering/posts/?feedView=all"><img src="./cards/build.svg" width="33.333%" alt="ENGINEERING: Computer Engineering" /></a><a href="https://github.com/A2Zcoder404?tab=repositories"><img src="./cards/agents.svg" width="33.333%" alt="BUILDING: 8 Repos" /></a><a href="https://www.linkedin.com/in/aditya-nair-0739b7321/recent-activity/all/"><img src="./cards/learn.svg" width="33.333%" alt="ACHIEVEMENTS: 6 Awards" /></a><br>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./cards/title-coding-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="./cards/title-coding-light.svg" /><img src="./cards/title-coding-light.svg" width="100%" alt="What I'm coding" /></picture><br>
+<a href="https://github.com/Pixel-Nova-v1-1/NOVATRACE"><img src="./cards/repo-novatrace.svg" width="33.333%" alt="NOVATRACE" /></a><a href="https://github.com/Pixel-Nova-v1-1/AmoghaFoundation"><img src="./cards/repo-amogha.svg" width="33.333%" alt="AmoghaFoundation" /></a><a href="https://github.com/Pixel-Nova-v1-1/ZeStay"><img src="./cards/repo-zestay.svg" width="33.333%" alt="ZeStay" /></a>
+</div>
 
-I'm a second-year Computer Engineering student who loves solving real-world problems through code and constantly improving by building hands-on projects.
-
-### 💡 Tech Skills:
-- 💻 HTML5, Python (Basics), C (Basics), TypeScript (project-based)
-- 🛠️ Git & GitHub (Basics)
-- 🔥 Firebase (used in SkipSafe project)
-- 🤖 Currently exploring `discord.py` and working on a Discord bot
-
-### 🚀 Projects
-- **SkipSafe (Built via Vibe Coding)**  
-  A smart attendance tracking app that helps students monitor attendance and calculate how many lectures they can skip — built with Firebase and TypeScript.
-
-- **Discord Bot** *(In Progress)*  
-  Learning how to create and deploy bots using Python's `discord.py` library.
-
-### 🎯 About Me
-I'm passionate about learning new technologies, building useful tools, and growing through self-driven projects. I believe in consistent learning — by doing, reflecting, and improving.
+<br/>
 
 > “Start where you are. Use what you have. Do what you can.”
 
----
-
-
-
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/zcoder404) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/aditya-nair-0739b7321) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:adityamnair23@gmail.com)  [![PayPal](https://img.shields.io/badge/PayPal-00457C?logo=paypal&logoColor=white)](https://paypal.me/zcoder404) 
-
-
-
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Zcoder404/Zcoder404/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Zcoder404/Zcoder404/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/Zcoder404/Zcoder404/output/github-snake.svg" />
-</picture>
-
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+<p align="center">
+<a href="https://a2zcoder404.com">a2zcoder404.com</a> &nbsp;/&nbsp; <a href="https://twitter.com/zcoder404">twitter: @zcoder404</a> &nbsp;/&nbsp; <a href="https://github.com/A2Zcoder404">github: @A2ZCoder404</a>
+</p>
