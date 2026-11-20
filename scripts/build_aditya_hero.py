@@ -101,7 +101,9 @@ def build_hero_svg(output_path=None):
     css_content = get_font_and_css_block()
     ascii_markup = generate_ascii_rows()
     
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="880.000" height="432" viewBox="0 0 880.000 432" role="img" aria-label="Aditya Nair. Computer Engineering Student and Fullstack AI Developer at Team Pixel Nova."><title>Aditya Nair. Computer Engineering Student and Fullstack AI Developer at Team Pixel Nova.</title><style>{css_content}</style>
+    aria_text = "Aditya Nair. I build intelligent systems, engineer autonomous agents, and turn ambitious ideas into real-world products."
+    
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="880.000" height="432" viewBox="0 0 880.000 432" role="img" aria-label="{aria_text}"><title>{aria_text}</title><style>{css_content}</style>
 <defs>
   <linearGradient id="shine" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="0">
     <stop offset="0" stop-color="#111111"/><stop offset=".42" stop-color="#111111"/>
@@ -119,13 +121,13 @@ def build_hero_svg(output_path=None):
 <text class="r" style="animation-delay:0.15s" x="44" y="190" font-family="'Instrument Serif', Georgia, serif" font-size="116" letter-spacing="-2.5" fill="#111111">Aditya</text>
 <text class="r" style="animation-delay:0.30s" x="44" y="290" font-family="'Instrument Serif', Georgia, serif" font-style="italic" font-size="116" letter-spacing="-2.5" fill="url(#shine)">Nair</text>
 <g class="r" style="animation-delay:0.55s">
-  <text x="48" y="338" font-family="Geist, system-ui, -apple-system, sans-serif" font-size="18" fill="#3a3a3c">Core builder at Team Pixel Nova. I build AI systems,</text>
-  <text x="48" y="365" font-family="Geist, system-ui, -apple-system, sans-serif" font-size="18" fill="#3a3a3c">autonomous agents &amp; teach people to do the same.</text>
+  <text x="48" y="338" font-family="Geist, system-ui, -apple-system, sans-serif" font-size="18" fill="#3a3a3c">I build intelligent systems, engineer autonomous agents,</text>
+  <text x="48" y="365" font-family="Geist, system-ui, -apple-system, sans-serif" font-size="18" fill="#3a3a3c">and turn ambitious ideas into real-world products.</text>
 </g>
 <g class="f" style="animation-delay:0.80s">
-  <a href="https://striveforexcellence.in/" target="_blank">
-    <text x="48" y="396" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#111111">striveforexcellence.in</text>
-    <text class="nu" x="232" y="396" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#2f55ff">&#8599;</text>
+  <a href="https://a2zcoder404.com" target="_blank">
+    <text x="48" y="396" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#111111">a2zcoder404.com</text>
+    <text class="nu" x="178" y="396" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#2f55ff">&#8599;</text>
   </a>
 </g>
 <g transform="translate(520 46) scale(0.41) translate(-20 -37)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
