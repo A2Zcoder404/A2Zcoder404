@@ -32,11 +32,11 @@ REPOS_CONFIG = [
         "legacy_filename": "repo-mindcare.svg",
         "title": "AmoghaFoundation",
         "lines": [
-            "Digital web platform empowering",
-            "grassroots community welfare, skill",
-            "training &amp; women development."
+            "Custom WordPress theme built for",
+            "NGO website to showcase welfare work",
+            "with easy-to-maintain templates."
         ],
-        "footer": "TypeScript  ·  Web Platform",
+        "footer": "PHP  ·  Internship",
         "accent": "#2f55ff",
         "delay": 4.75
     },
