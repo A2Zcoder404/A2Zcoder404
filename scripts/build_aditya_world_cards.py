@@ -55,7 +55,6 @@ WORLD_CONFIGS = [
     {
         "filename": "build.svg",
         "tag": "ENGINEERING",
-        "badge_x": 126,
         "type": "multi_title",
         "title_lines": ["Computer", "Engineering"],
         "lines": [
@@ -74,7 +73,6 @@ WORLD_CONFIGS = [
     {
         "filename": "agents.svg",
         "tag": "BUILDING",
-        "badge_x": 98,
         "type": "counter_roll",
         "final_num": 8,
         "label": "Repos",
@@ -94,13 +92,12 @@ WORLD_CONFIGS = [
     {
         "filename": "learn.svg",
         "tag": "ACHIEVEMENTS",
-        "badge_x": 134,
         "type": "counter_roll",
-        "final_num": 5,
+        "final_num": 6,
         "label": "Awards",
-        "roll_values": [0, 1, 2, 3, 4, 5],
+        "roll_values": [0, 1, 2, 3, 4, 5, 6],
         "lines": [
-            "3 First-place · 2 Second-place finishes."
+            "3 First-place · 3 Second-place finishes."
         ],
         "bg": "#f5a623",
         "text_color": "#111111",
@@ -147,7 +144,6 @@ def render_slot_counter(values, label, text_color, delay_start, duration=0.8):
 
 def render_world_card(cfg, fonts_css):
     tag = cfg["tag"]
-    badge_x = cfg["badge_x"]
     bg = cfg["bg"]
     tc = cfg["text_color"]
     bc = cfg["body_color"]
@@ -205,12 +201,9 @@ def render_world_card(cfg, fonts_css):
             for i, l in enumerate(safe_lines)
         ])
 
-    badge_markup = (
+    arrow_markup = (
         f'<g class="ai" style="animation-delay:{delay + 0.50:.2f}s">'
-        f'<g class="n" style="animation-delay:{delay + 1.30:.2f}s">'
-        f'<rect x="{badge_x}" y="27" width="14" height="14" rx="3" fill="#58a6ff"/>'
-        f'<path d="M{badge_x + 3.5} 37.5 L{badge_x + 10.5} 30.5 M{badge_x + 6.5} 30.5 H{badge_x + 10.5} V34.5" stroke="#ffffff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>'
-        f'</g>'
+        f'<text class="n" style="animation-delay:{delay + 1.30:.2f}s" x="250" y="38" font-family="\'Geist Mono\', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="{tc}">&#8594;</text>'
         f'</g>'
     )
 
@@ -230,7 +223,7 @@ def render_world_card(cfg, fonts_css):
     <rect class="sh" style="animation-delay:{delay + 1.40:.2f}s" x="0" y="-20" width="90" height="250" fill="url(#gl)" transform="translate(-260 0)"/>
   </g>
   <text class="sl" style="animation-delay:{delay + 0.35:.2f}s" x="24" y="38" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="1.2" fill="{tc}">{tag}</text>
-  {badge_markup}
+  {arrow_markup}
   {title_markup}
   {desc_markup}
 </g>

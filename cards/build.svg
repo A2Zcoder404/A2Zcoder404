@@ -66,7 +66,7 @@
     <rect class="sh" style="animation-delay:4.50s" x="0" y="-20" width="90" height="250" fill="url(#gl)" transform="translate(-260 0)"/>
   </g>
   <text class="sl" style="animation-delay:3.45s" x="24" y="38" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="1.2" fill="#ffffff">ENGINEERING</text>
-  <g class="ai" style="animation-delay:3.60s"><g class="n" style="animation-delay:4.40s"><rect x="126" y="27" width="14" height="14" rx="3" fill="#58a6ff"/><path d="M129.5 37.5 L136.5 30.5 M132.5 30.5 H136.5 V34.5" stroke="#ffffff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g></g>
+  <g class="ai" style="animation-delay:3.60s"><text class="n" style="animation-delay:4.40s" x="250" y="38" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#ffffff">&#8594;</text></g>
   <g clip-path="url(#slot)"><g class="ro" style="animation-delay:3.55s">
     <text x="22" y="90" font-family="'Instrument Serif', Georgia, serif" font-style="italic" font-size="34" fill="#ffffff">Computer</text>
     <text x="22" y="122" font-family="'Instrument Serif', Georgia, serif" font-style="italic" font-size="34" fill="#ffffff">Engineering</text>
