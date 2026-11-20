@@ -16,7 +16,6 @@ CARDS_DIR = os.path.join(BASE_DIR, "cards")
 REPOS_CONFIG = [
     {
         "filename": "repo-novatrace.svg",
-        "legacy_filename": "repo-ironeight.svg",
         "title": "NOVATRACE",
         "lines": [
             "AI email threat detection and",
@@ -29,7 +28,6 @@ REPOS_CONFIG = [
     },
     {
         "filename": "repo-amogha.svg",
-        "legacy_filename": "repo-mindcare.svg",
         "title": "AmoghaFoundation",
         "lines": [
             "Custom WordPress theme built for",
@@ -42,7 +40,6 @@ REPOS_CONFIG = [
     },
     {
         "filename": "repo-zestay.svg",
-        "legacy_filename": "repo-glowup.svg",
         "title": "ZeStay",
         "lines": [
             "Smart PG and roommate discovery",
@@ -99,13 +96,6 @@ def build_all_repo_cards():
         with open(primary_path, "w", encoding="utf-8") as f:
             f.write(svg_content)
         generated.append(primary_path)
-
-        # Write to legacy target as well
-        if "legacy_filename" in cfg:
-            legacy_path = os.path.join(CARDS_DIR, cfg["legacy_filename"])
-            with open(legacy_path, "w", encoding="utf-8") as f:
-                f.write(svg_content)
-            generated.append(legacy_path)
 
         print(f"[✓] Generated {cfg['filename']} (length: {len(svg_content)})")
 
