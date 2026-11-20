@@ -10,6 +10,9 @@ import math
 import html
 import numpy as np
 from PIL import Image, ImageOps, ImageEnhance
+from build_aditya_hero import build_hero_svg
+from build_aditya_heatmap import build_heatmap_svg
+from build_aditya_activity import build_activity_svg
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, "..")
@@ -79,208 +82,28 @@ def generate_face_dots(photo_path, max_dots_w=62):
     return dots, box_w, box_h
 
 # ==============================================================================
-# 1. HERO CARD
+# 1. HERO CARD (Avi Vashishta Style - Instrument Serif + ASCII Art + Animated Shine)
 # ==============================================================================
 def render_hero():
-    h = 270
-    dots, face_w, face_h = generate_face_dots(SOURCE_PHOTO, max_dots_w=62)
-    face_x = W - face_w - 32
-    face_y = (h - face_h) / 2.0
-    
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{h + BOTTOM}" viewBox="0 0 {W} {h + BOTTOM}" role="img" aria-label="Aditya Mohan Nair — Engineering Portfolio Hero">
-  <defs>
-    <style>
-      {BASE_CSS}
-      .name {{ font-family: {SERIF}; font-size: 46px; fill: {INK}; letter-spacing: -0.5px; font-weight: 500; }}
-      .sub {{ font-family: {SERIF}; font-style: italic; font-size: 21px; fill: {INK_SOFT}; }}
-      .bio {{ font-family: {SANS}; font-size: 13.5px; fill: {MUTED}; line-height: 1.55; }}
-      .meta {{ font-family: {MONO}; font-size: 10px; font-weight: 700; letter-spacing: 1.2px; fill: {MUTED}; }}
-      .tag {{ font-family: {MONO}; font-size: 11px; font-weight: 700; fill: {BLUE}; }}
-    </style>
-    <clipPath id="heroFaceClip">
-      <rect x="0" y="0" width="{face_w}" height="{face_h}" rx="12"/>
-    </clipPath>
-  </defs>
-
-  <!-- Card Canvas -->
-  <rect x="0" y="0" width="{W}" height="{h}" rx="14" fill="{PAPER}" stroke="{RULE}" stroke-width="1.2"/>
-
-  <!-- Left Editorial Bio -->
-  <g transform="translate(36, 36)">
-    <!-- Header Status Strip -->
-    <g transform="translate(0, 0)">
-      <circle cx="5" cy="5" r="4" fill="{GREEN}" class="live"/>
-      <text x="16" y="9" class="meta">COMPUTER ENGINEERING · FULLSTACK &amp; AI</text>
-    </g>
-
-    <!-- Name & Title -->
-    <g transform="translate(0, 48)">
-      <text x="0" y="0" class="name">Aditya Mohan Nair.</text>
-      <text x="0" y="26" class="sub">Core builder @ Team Pixel Nova</text>
-    </g>
-
-    <!-- Body Description -->
-    <g transform="translate(0, 114)">
-      <text x="0" y="0" class="bio">I design intelligent systems, real-time computer vision interfaces,</text>
-      <text x="0" y="20" class="bio">and high-craft fullstack applications. Focused on autonomous AI,</text>
-      <text x="0" y="40" class="bio">cybersecurity forensics, and human-computer interaction.</text>
-    </g>
-
-    <!-- Bottom Link -->
-    <g transform="translate(0, 192)">
-      <text x="0" y="0" class="tag">striveforexcellence.in</text>
-      <text x="135" y="0" class="tag n">→</text>
-      <text x="175" y="0" class="meta">@A2ZCODER404</text>
-    </g>
-  </g>
-
-  <!-- Right Halftone Editorial Face -->
-  <g transform="translate({face_x}, {face_y})">
-    <rect x="0" y="0" width="{face_w}" height="{face_h}" rx="12" fill="{CARD_BG}" stroke="{RULE}" stroke-width="1"/>
-    <g clip-path="url(#heroFaceClip)">
-      {''.join(dots)}
-    </g>
-    <text x="12" y="{face_h - 10}" font-family="{MONO}" font-size="8.5" font-weight="700" fill="{MUTED}">ADITYA · 2026</text>
-  </g>
-</svg>'''
-    with open(os.path.join(CARDS, "hero.svg"), "w", encoding="utf-8") as f:
-        f.write(svg)
-    print("[✓] Rendered cards/hero.svg")
+    hero_path = os.path.join(CARDS, "hero.svg")
+    build_hero_svg(hero_path)
+    print(f"[✓] Rendered cards/hero.svg (Avi Vashishta typography & ASCII system)")
 
 # ==============================================================================
-# 2. HEATMAP CARD
+# 2. HEATMAP CARD (Avi Vashishta Style - Cobalt Blue Scale + Pop Cascade)
 # ==============================================================================
 def render_heatmap():
-    h = 130
-    cols = 52
-    rows = 7
-    cell_size = 10
-    cell_gap = 3.5
-    start_x = 42
-    start_y = 48
-    
-    shades = ["#e4e4e7", "#bfdbfe", "#60a5fa", "#2563eb", "#1d4ed8"]
-    
-    import random
-    random.seed(2026)
-    
-    cells = []
-    for c in range(cols):
-        base_p = 0.35 if c < 24 else 0.55
-        for r in range(rows):
-            x = start_x + c * (cell_size + cell_gap)
-            y = start_y + r * (cell_size + cell_gap)
-            rnd = random.random()
-            lvl = 0 if rnd > base_p else (1 if rnd > base_p * 0.5 else (2 if rnd > base_p * 0.25 else (3 if rnd > base_p * 0.1 else 4)))
-            fill = shades[lvl]
-            cells.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{cell_size}" height="{cell_size}" rx="2" fill="{fill}"/>')
-
-    months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-    month_labels = []
-    for i, m in enumerate(months):
-        mx = start_x + int(i * (cols / 12.0) * (cell_size + cell_gap))
-        month_labels.append(f'<text x="{mx}" y="38" font-family="{MONO}" font-size="9" font-weight="600" fill="{MUTED}">{m}</text>')
-
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{h + BOTTOM}" viewBox="0 0 {W} {h + BOTTOM}" role="img" aria-label="Aditya's contribution heatmap, refreshed daily">
-  <defs>
-    <style>
-      {BASE_CSS}
-      .title {{ font-family: {MONO}; font-size: 10px; font-weight: 700; letter-spacing: 1.2px; fill: {INK}; }}
-      .sub {{ font-family: {MONO}; font-size: 9.5px; font-weight: 600; fill: {MUTED}; }}
-    </style>
-  </defs>
-
-  <rect width="{W}" height="{h}" rx="14" fill="{PAPER}" stroke="{RULE}" stroke-width="1.2"/>
-
-  <!-- Header -->
-  <g transform="translate(42, 22)">
-    <circle cx="0" cy="0" r="3" fill="{BLUE}"/>
-    <text x="10" y="3.5" class="title">CONTRIBUTIONS · ROLLING 52 WEEKS</text>
-    <text x="{W - 84}" y="3.5" class="sub" text-anchor="end">REFRESHED DAILY VIA ACTIONS</text>
-  </g>
-
-  <!-- Month Labels -->
-  <g>
-    {' '.join(month_labels)}
-  </g>
-
-  <!-- Heatmap Matrix -->
-  <g>
-    {' '.join(cells)}
-  </g>
-</svg>'''
-    with open(os.path.join(CARDS, "heatmap.svg"), "w", encoding="utf-8") as f:
-        f.write(svg)
-    print("[✓] Rendered cards/heatmap.svg")
+    heatmap_path = os.path.join(CARDS, "heatmap.svg")
+    build_heatmap_svg(heatmap_path)
+    print(f"[✓] Rendered cards/heatmap.svg (Avi Vashishta telemetry & pop animation)")
 
 # ==============================================================================
-# 3. ACTIVITY CARD (Monthly Bars + Streaks)
+# 3. ACTIVITY CARD (Avi Vashishta Style - 12 Months Bars + Telemetry)
 # ==============================================================================
 def render_activity():
-    h = 120
-    months = ["Dec", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov"]
-    counts = [14, 22, 18, 32, 28, 19, 24, 38, 42, 35, 48, 56]
-    max_c = max(counts)
-    
-    bar_w = 16
-    bar_max_h = 44
-    start_x = 42
-    base_y = 86
-    
-    bars = []
-    for i, (m, c) in enumerate(zip(months, counts)):
-        bx = start_x + i * 28
-        bh = (c / max_c) * bar_max_h
-        by = base_y - bh
-        is_latest = (i == len(months) - 1)
-        fill = BLUE if is_latest else ("#3b82f6" if c > 30 else "#93c5fd")
-        bars.append(f'''
-        <g>
-          <rect x="{bx}" y="{by:.1f}" width="{bar_w}" height="{bh:.1f}" rx="3" fill="{fill}"/>
-          <text x="{bx + bar_w/2}" y="{base_y + 14}" font-family="{MONO}" font-size="8.5" font-weight="600" fill="{MUTED}" text-anchor="middle">{m}</text>
-        </g>''')
-
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{h + BOTTOM}" viewBox="0 0 {W} {h + BOTTOM}" role="img" aria-label="Monthly activity and streak stats">
-  <defs>
-    <style>
-      {BASE_CSS}
-      .num {{ font-family: {SERIF}; font-size: 34px; fill: {INK}; font-weight: 500; }}
-      .lbl {{ font-family: {MONO}; font-size: 9.5px; font-weight: 700; letter-spacing: 1px; fill: {INK}; }}
-      .meta {{ font-family: {MONO}; font-size: 10px; font-weight: 600; fill: {MUTED}; }}
-    </style>
-  </defs>
-
-  <rect width="{W}" height="{h}" rx="14" fill="{PAPER}" stroke="{RULE}" stroke-width="1.2"/>
-
-  <!-- Left: Monthly Bars -->
-  <g>
-    <text x="42" y="24" class="lbl">ACTIVITY BY MONTH</text>
-    {''.join(bars)}
-  </g>
-
-  <!-- Divider -->
-  <line x1="410" y1="20" x2="410" y2="100" stroke="{RULE}" stroke-width="1"/>
-
-  <!-- Center Stat: Current Streak -->
-  <g transform="translate(440, 36)">
-    <text x="0" y="0" class="lbl">CURRENT STREAK</text>
-    <text x="0" y="38" class="num">12 <tspan font-family="{SANS}" font-size="14" fill="{BLUE}" font-weight="bold">days</tspan></text>
-    <text x="0" y="56" class="meta">Consistent development</text>
-  </g>
-
-  <!-- Divider -->
-  <line x1="630" y1="20" x2="630" y2="100" stroke="{RULE}" stroke-width="1"/>
-
-  <!-- Right Stat: Verified Metrics -->
-  <g transform="translate(660, 36)">
-    <text x="0" y="0" class="lbl">VERIFIED CODEBASE</text>
-    <text x="0" y="38" class="num">576.5 <tspan font-family="{SANS}" font-size="14" fill="{MUTED}" font-weight="bold">KB</tspan></text>
-    <text x="0" y="56" class="meta">Across 8 public repositories</text>
-  </g>
-</svg>'''
-    with open(os.path.join(CARDS, "activity.svg"), "w", encoding="utf-8") as f:
-        f.write(svg)
-    print("[✓] Rendered cards/activity.svg")
+    activity_path = os.path.join(CARDS, "activity.svg")
+    build_activity_svg(activity_path)
+    print(f"[✓] Rendered cards/activity.svg (Avi Vashishta 12-month bars & telemetry)")
 
 # ==============================================================================
 # 4. THREE WORLDS TILES (BUILD, AGENTS/VISION, LEARN)
@@ -411,7 +234,7 @@ def render_repo_card(filename, repo_name, stack_label, desc_lines, accent, left_
     print(f"[✓] Rendered cards/{filename}")
 
 def main():
-    print("[*] Rendering Avi Vashishta-inspired cards for Aditya Mohan Nair...")
+    print("[*] Rendering Avi Vashishta-inspired cards for Aditya Nair...")
     render_hero()
     render_heatmap()
     render_activity()
