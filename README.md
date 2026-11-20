@@ -12,6 +12,10 @@
 <a href="https://github.com/Pixel-Nova-v1-1/NOVATRACE"><img src="./cards/repo-novatrace.svg" width="33.333%" alt="NOVATRACE" /></a><a href="https://github.com/Pixel-Nova-v1-1/AmoghaFoundation"><img src="./cards/repo-amogha.svg" width="33.333%" alt="AmoghaFoundation" /></a><a href="https://github.com/Pixel-Nova-v1-1/ZeStay"><img src="./cards/repo-zestay.svg" width="33.333%" alt="ZeStay" /></a>
 </div>
 
+<br/>
+
+> “Start where you are. Use what you have. Do what you can.”
+
 <p align="center">
 <a href="https://a2zcoder404.com">a2zcoder404.com</a> &nbsp;/&nbsp; <a href="https://twitter.com/zcoder404">twitter: @zcoder404</a> &nbsp;/&nbsp; <a href="https://github.com/A2Zcoder404">github: @A2ZCoder404</a>
 </p>

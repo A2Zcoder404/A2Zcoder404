@@ -22,6 +22,11 @@ def get_font_and_css_block():
     raise ValueError("Could not find hero_fonts.css or cards/hero.svg for style block")
 
 def generate_ascii_rows(photo_path=None, cols=180, rows=96):
+    cached_xml = os.path.join(ROOT, 'data', 'hero_ascii.xml')
+    if photo_path is None and os.path.exists(cached_xml):
+        with open(cached_xml, 'r', encoding='utf-8') as f:
+            return f.read()
+
     if photo_path is None:
         photo_path = os.path.join(ROOT, 'source-photo.png')
     img = Image.open(photo_path).convert('RGB')
