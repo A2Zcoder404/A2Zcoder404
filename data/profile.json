@@ -3,40 +3,53 @@
   "name": "Aditya Nair",
   "bio": "Aspiring developer | UI/UX enthusiast | Building, learning, and growing one project at a time.",
   "avatar_url": "https://avatars.githubusercontent.com/u/177934456?v=4",
-  "blog": "http://a2zcoder404.com/blogs",
+  "blog": "https://striveforexcellence.in/",
   "twitter": "zcoder404",
   "public_repos": 8,
   "followers": 9,
   "following": 8,
   "created_at": "2024-08-09T11:13:23Z",
-  "total_code_bytes": 590325,
+  "total_code_bytes": 870916,
   "language_distribution": {
     "TypeScript": {
       "bytes": 341306,
-      "percentage": 57.8
-    },
-    "Python": {
-      "bytes": 119540,
-      "percentage": 20.2
+      "percentage": 39.2
     },
     "HTML": {
-      "bytes": 46175,
-      "percentage": 7.8
+      "bytes": 272098,
+      "percentage": 31.2
+    },
+    "Python": {
+      "bytes": 174208,
+      "percentage": 20.0
     },
     "CSS": {
       "bytes": 42432,
-      "percentage": 7.2
+      "percentage": 4.9
     },
     "JavaScript": {
       "bytes": 39175,
-      "percentage": 6.6
+      "percentage": 4.5
     },
     "PowerShell": {
       "bytes": 1697,
-      "percentage": 0.3
+      "percentage": 0.2
     }
   },
   "repositories": [
+    {
+      "name": "A2Zcoder404",
+      "description": "",
+      "primary_language": "HTML",
+      "languages": {
+        "HTML": 225923,
+        "Python": 54668
+      },
+      "stars": 0,
+      "forks": 0,
+      "url": "https://github.com/A2Zcoder404/A2Zcoder404",
+      "homepage": null
+    },
     {
       "name": "gst",
       "description": "",
@@ -117,16 +130,6 @@
       "stars": 0,
       "forks": 0,
       "url": "https://github.com/A2Zcoder404/GlowUp",
-      "homepage": null
-    },
-    {
-      "name": "A2Zcoder404",
-      "description": "",
-      "primary_language": "Other",
-      "languages": {},
-      "stars": 0,
-      "forks": 0,
-      "url": "https://github.com/A2Zcoder404/A2Zcoder404",
       "homepage": null
     }
   ]
