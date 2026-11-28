@@ -9,14 +9,14 @@
   "followers": 9,
   "following": 8,
   "created_at": "2024-08-09T11:13:23Z",
-  "total_code_bytes": 870350,
+  "total_code_bytes": 870916,
   "language_distribution": {
     "TypeScript": {
       "bytes": 341306,
       "percentage": 39.2
     },
     "HTML": {
-      "bytes": 271532,
+      "bytes": 272098,
       "percentage": 31.2
     },
     "Python": {
@@ -42,7 +42,7 @@
       "description": "",
       "primary_language": "HTML",
       "languages": {
-        "HTML": 225357,
+        "HTML": 225923,
         "Python": 54668
       },
       "stars": 0,
